@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "svelte.svelte-vscode",
+    "rusnasonov.vscode-hugo",
+    "budparr.language-hugo-vscode",
+    "akmittal.hugofy"
+  ]
+}

@@ -1,0 +1,25 @@
+<svg
+  data-name="wave1"
+  viewBox="0 0 1440 392"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <defs>
+    <linearGradient id="gt1" x2="0" y1="1">
+      <stop class="wave-red" offset="0" />
+      <stop class="wave-first" offset="1" />
+    </linearGradient>
+    <linearGradient id="gb1" x2="0" y1="1">
+      <stop class="wave-red" offset="0" />
+      <stop  class="wave-second" offset="1" />
+    </linearGradient>
+  </defs>
+  <path
+    d="m1440,326.7c-69,16.3-137.1,16.3-206,16.3h-205c-69,0-137.6,0-206-16.3-69-16.7-137.3-48.7-206-98-68-48.7-137-114.7-206-98-68,16.3-136.7,114.3-205,122.5-69,7.8-137.4-73.2-171.7-114.4L0,98v294h1440v-65.3Z"
+    fill="url(#gt1)"
+  />
+  <path
+    d="m1440,196c-69-33-137.1-65-206-49-68,16-136.9,82-205,98-69,16-137.6-16-206-32.7-69-16.3-137.3-16.3-206-49-68-32.3-137-98.3-206-106.1-68-8.2-136.7,40.8-205,40.8S68.6,49,34.3,24.5L0,0v392h1440v-196Z"
+    fill="url(#gb1)"
+    opacity=".9"
+  />
+</svg>

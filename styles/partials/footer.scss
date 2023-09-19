@@ -1,0 +1,30 @@
+footer {
+  @apply flex flex-col items-center justify-center gap-y-1 bg-slate-50 py-3 shadow-inner;
+
+  a {
+    @apply transition-colors duration-300;
+  }
+
+  .footer-social {
+    @apply flex gap-x-2;
+
+    a {
+      @apply px-1 py-0.5 text-lg text-slate-700 hover:text-slate-500;
+    }
+  }
+  .footer-separator {
+    @apply my-0.5 inline-block h-0.5 w-28 rounded-full bg-slate-400/60;
+  }
+
+  .footer-link {
+    @apply flex gap-2;
+
+    a {
+      @apply my-1 text-sm text-slate-700 hover:text-slate-400;
+    }
+  }
+
+  .actual-footer {
+    @apply mt-1 text-[.65rem]/3 font-bold uppercase text-slate-600;
+  }
+}

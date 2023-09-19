@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>
+      {{ block "title" . }} {{ .Page.Title }} {{ end }} {{ if not (eq
+      .Params.Index true) }} - Futami Yarn {{ end }}
+    </title>
+    <link
+      rel="shortcut icon"
+      href="/assets/favicon/favicon.svg"
+      type="image/x-icon"
+      id="favicon"
+    />
+
+    <!-- Svelte Module --->
+    <link rel="stylesheet" href="/svelte/{{ .Site.Data.svelte.css }}" />
+    <script
+      type="module"
+      src="/svelte/{{ .Site.Data.svelte.js }}"
+      defer
+    ></script>
+  </head>
+  <body>
+    <!-- <global-data 
+    permalink="{{ .Permalink }}" 
+    vimeo="{{ .Params.vimeo }}"
+    youtube="{{ .Params.youtube }}"
+    free="{{ .Params.free }}"
+    next="{{with .PrevInSection}}{{.Permalink}}{{end}}" 
+    prev="{{with .NextInSection}}{{.Permalink}}{{end}}">
+  </global-data> -->
+
+    {{ partial "navbar.html" }}
+    <article class="pt-14">
+      {{ block "main" . }}
+      <!-- Main -->
+      {{ end }}
+    </article>
+    {{ partial "footer.html" }}
+  </body>
+</html>

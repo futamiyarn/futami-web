@@ -1,0 +1,25 @@
+<svg
+  data-name="wave2"
+  viewBox="0 0 1440 433.71"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <defs>
+    <linearGradient id="gt2" x2="0" y1="1">
+      <stop class="wave-first" offset="0" />
+      <stop class="wave-red" offset="1" />
+    </linearGradient>
+    <linearGradient id="gb2" x2="0" y1="1">
+      <stop class="wave-second" offset="0" />
+      <stop class="wave-red" offset="1" />
+    </linearGradient>
+  </defs>
+  <path
+    d="m0,302.2c69-41.2,137.1-73.2,206-106.2,68-33,136.9-65,205-81.7,69-16.3,137.6-16.3,206,40.9,69,56.8,137.3,171.8,206,196,68,24.8,137-41.2,206-73.5,68-32.7,136.7-32.7,205-49,69-16.7,137.4-48.7,171.7-65.4l34.3-16.3V0H0v302.2Z"
+    fill="url(#gt2)"
+  />
+  <path
+    d="m0,228.7c69-32.7,137.1,16.3,206,16.3s136.9-49,205-24.5c69,24.5,137.6,122.5,206,122.5s137.3-98,206-122.5c68-24.5,137,24.5,206,81.7,68,56.8,136.7,122.8,205,130.6,69,8.2,137.4-40.8,171.7-65.3l34.3-24.5V0H0v228.7Z"
+    fill="url(#gb2)"
+    opacity=".9"
+  />
+</svg>

@@ -1,0 +1,112 @@
+.main-logo {
+  @apply relative max-h-12 w-12;
+
+  &::before {
+    @apply absolute left-1/2 top-1/2 -z-10 inline-block aspect-square w-[var(--round-size)] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#be1e2e] transition-all duration-500 ease-in-out content-[""];
+  }
+
+  svg {
+    @apply max-h-12 w-12;
+  }
+
+  &:not(.loading-logo):hover {
+    &::before {
+      @apply bg-[#ffe43f];
+    }
+
+    .first-area,
+    .second-area,
+    .third-area {
+      @apply fill-[#be1e2e];
+    }
+  }
+}
+
+.bg-area {
+  @apply fill-none;
+}
+
+.first-area {
+  @apply fill-[#F38998] transition-colors duration-200;
+}
+
+.second-area {
+  @apply fill-[#F9C6D2] transition-colors duration-200;
+}
+
+.third-area {
+  @apply fill-white transition-colors duration-200;
+}
+
+.loading-logo {
+  .bg-area {
+    @apply fill-[#be1e2e60];
+  }
+
+  .first-area {
+    animation: areaSatu 1.5s;
+    animation-iteration-count: infinite;
+  }
+
+  .second-area {
+    animation: areaDua 1.5s;
+    animation-iteration-count: infinite;
+  }
+
+  .third-area {
+    animation: areaTiga 1.5s;
+    animation-iteration-count: infinite;
+  }
+}
+
+@keyframes areaSatu {
+  from {
+    @apply fill-[#F38998];
+  }
+  33% {
+    @apply fill-white;
+  }
+  66% {
+    @apply fill-[#F9C6D2];
+  }
+  99% {
+    @apply fill-[#F38998];
+  }
+  to {
+    @apply fill-[#F38998];
+  }
+}
+@keyframes areaDua {
+  from {
+    @apply fill-[#F9C6D2];
+  }
+  33% {
+    @apply fill-[#F38998];
+  }
+  66% {
+    @apply fill-white;
+  }
+  99% {
+    @apply fill-[#F9C6D2];
+  }
+  to {
+    @apply fill-[#F9C6D2];
+  }
+}
+@keyframes areaTiga {
+  from {
+    @apply fill-white;
+  }
+  33% {
+    @apply fill-[#F9C6D2];
+  }
+  66% {
+    @apply fill-[#F38998];
+  }
+  99% {
+    @apply fill-white;
+  }
+  to {
+    @apply fill-white;
+  }
+}

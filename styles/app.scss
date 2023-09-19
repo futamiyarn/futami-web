@@ -1,0 +1,35 @@
+// Import Modules
+
+// Partial
+@use "./partials/navbar.scss";
+@use "./partials/footer.scss";
+
+// Page
+@use "./pages/home.scss";
+
+// Components
+@use "./components/logo-ani.scss";
+
+// Import Tailwind
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+}
+
+html {
+  @apply mx-auto w-screen overflow-x-hidden;
+
+  &::-webkit-scrollbar {
+    @apply w-1;
+
+    &-track {
+      @apply bg-white;
+    }
+
+    &-thumb {
+      @apply rounded-full bg-slate-400;
+    }
+  }
+}

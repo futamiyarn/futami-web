@@ -1,0 +1,39 @@
+.home-section {
+  @apply flex w-screen items-center justify-center px-6 py-[10vh] text-center;
+
+  div {
+    @apply flex flex-col justify-center gap-1;
+  }
+
+  h1 {
+    @apply text-2xl font-semibold sm:text-4xl;
+  }
+
+  h2 {
+    @apply text-xl font-semibold sm:text-2xl;
+  }
+}
+
+.inside-wave {
+  @apply relative bg-[#BE1E2D] py-[15vh] text-white;
+
+  &::before {
+    @apply absolute top-0 z-[2] h-1 w-screen  -translate-y-0.5 bg-[#BE1E2D] content-[""];
+  }
+
+  &::after {
+    @apply absolute bottom-0 z-[2] h-1 w-screen translate-y-0.5 bg-[#BE1E2D] content-[""];
+  }
+}
+
+.wave {
+  &-red {
+    @apply [stop-color:rgb(190,30,45)];
+  }
+  &-first {
+    @apply [stop-color:rgb(242.584,128.003,37.064,1)];
+  }
+  &-second {
+    @apply [stop-color:rgb(255,179,11)];
+  }
+}
