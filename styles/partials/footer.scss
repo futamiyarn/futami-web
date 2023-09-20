@@ -10,6 +10,10 @@ footer {
 
     a {
       @apply px-1 py-0.5 text-lg text-slate-700 hover:text-slate-500;
+
+      svg {
+        @apply h-[1em] w-[1.25em] fill-current;
+      }
     }
   }
   .footer-separator {

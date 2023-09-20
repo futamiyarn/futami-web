@@ -9,7 +9,7 @@ O))        O))O))   O))   O)) O)))O)))  O)  O))O))    O))       O)) O)))O)))   O
 
 // Global code
 // import("@fortawesome/fontawesome-svg-core/styles.css").then((m) => m);
-import "@fortawesome/fontawesome-svg-core/styles.css";
+// import "@fortawesome/fontawesome-svg-core/styles.css";
 import "../styles/app.scss";
 import flamethrower from "flamethrower-router";
 // import { GAPageView, passwordlessSignin } from './util/firebase';
@@ -58,7 +58,7 @@ export const router = flamethrower({ prefetch: "hover", log: true });
 // UI
 export * from "./components/logo-animation.svelte";
 // export * from "./components/font-awesome.svelte";
-import("./components/font-awesome.svelte").then((m) => m.default);
+// import("./components/font-awesome.svelte").then((m) => m.default);
 
 // export * from './components/ui/modal-action.svelte';
 // export * from './components/ui/modal-dialog.svelte';
