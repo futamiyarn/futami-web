@@ -57,6 +57,7 @@ export const router = flamethrower({ prefetch: "hover", log: true });
 
 // UI
 export * from "./components/logo-animation.svelte";
+export * from "./components/random-ami.svelte";
 // export * from "./components/font-awesome.svelte";
 // import("./components/font-awesome.svelte").then((m) => m.default);
 
