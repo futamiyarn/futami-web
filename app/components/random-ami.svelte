@@ -135,7 +135,7 @@
       >
     </div>
   </div>
-  <span class="text-center w-screen inline-block text-sm py-3 mb-16"
+  <span class="text-center w-screen inline-block text-sm py-3 mb-12"
     >Source: <a
       href="https://youtu.be/{played.videoID}"
       target="_blank"
