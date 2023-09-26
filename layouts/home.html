@@ -1,31 +1,34 @@
 {{ define "main" }}
-<section class="home-section py-[25vh]">
+<section class="home-section pb-[13vh] pt-[28vh]">
   <div class="">
     <h1>Bikin Otak Anda Sedikit Lebih Pintar</h1>
-    <span class="sm:text-xl"
-      >Seorang programer dan konten kreator yan gak tau arah kemana</span
-    >
+    <p class="sm:text-xl">
+      Seorang programer dan konten kreator yan gak tau arah kemana
+    </p>
+    <a href="" class="btn">Liat Saya</a>
   </div>
 </section>
 {{ partial "home/wave1.svg" . }}
 <section class="home-section inside-wave">
   <div>
     <h2>Website apa ini</h2>
-    <span class="sm:px-15 inline-block px-10 md:px-20">
+    <p class="small">
       Website ini merupakan blog sekaligus tutorial multi-level yang bisa
       digunakan oleh rakyat Indonesia (atau bahasa sejenis) sehingga bisa
       digunakan pada kegiatan sehari-hari
-    </span>
+    </p>
+    <a href="" class="btn">Baca Beberapa</a>
   </div>
 </section>
 {{ partial "home/wave2.svg" . }}
-<section class="home-section pb-[25vh]">
+<section class="home-section pb-[18vh] pt-[8vh]">
   <div class="">
     <h2>Apakah ini gratis?</h2>
-    <span class="inline-block px-10">
+    <p class="small">
       Sebagian besar tutorial ini gratis, tapi anda bisa donasi di sini untuk
       mensupport saya lebih lanjut
-    </span>
+    </p>
+    <a href="" class="btn">Support Kami</a>
   </div>
 </section>
 {{end}}

@@ -6,11 +6,23 @@
   }
 
   h1 {
-    @apply text-2xl font-semibold sm:text-4xl;
+    @apply text-5xl font-semibold;
   }
 
   h2 {
-    @apply text-xl font-semibold sm:text-2xl;
+    @apply text-4xl font-semibold;
+  }
+
+  p {
+    @apply my-2 inline-block px-10 text-2xl;
+
+    &.small {
+      @apply text-lg;
+    }
+  }
+
+  .btn {
+    @apply mx-auto my-0.5 w-fit rounded-md bg-slate-100 px-5 py-2 text-xl transition-colors duration-300 ease-out hover:bg-slate-300;
   }
 }
 
@@ -23,6 +35,10 @@
 
   &::after {
     @apply absolute bottom-0 z-[2] h-1 w-screen translate-y-0.5 bg-[#BE1E2D] content-[""];
+  }
+
+  .btn {
+    @apply bg-[#a82532] hover:bg-[#922c36];
   }
 }
 

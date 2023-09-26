@@ -21,7 +21,7 @@ footer {
   }
 
   .footer-link {
-    @apply my-1 flex gap-2;
+    @apply my-0.5 flex gap-2;
 
     a {
       @apply text-sm text-slate-700 hover:text-slate-400;
