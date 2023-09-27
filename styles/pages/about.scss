@@ -1,0 +1,11 @@
+.about {
+  @apply mt-4 flex flex-col items-center;
+
+  h1 {
+    @apply my-4 inline-block border-b-4 text-3xl font-bold md:text-4xl;
+  }
+
+  p {
+    @apply prose lg:prose-xl;
+  }
+}

@@ -6,9 +6,13 @@
 
 // Page
 @use "./pages/home.scss";
+@use "./pages/about.scss";
 
 // Components
 @use "./components/logo-ani.scss";
+
+// Fonts
+@use "./components/fonts.scss";
 
 // Import Tailwind
 @tailwind base;
