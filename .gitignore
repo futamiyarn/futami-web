@@ -43,4 +43,4 @@ firebase.json
 .firebase
 resources/
 
-
+*:Zone.Identifier
