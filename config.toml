@@ -1,6 +1,7 @@
 baseURL = 'http://example.org/'
 languageCode = 'id-id'
 title = 'Futami Yarn'
+description = 'Bikin Otak Anda Sedikit Lebih Pintar'
 enableRobotsTXT = true
 
 

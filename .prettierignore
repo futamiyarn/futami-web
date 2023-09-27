@@ -4,3 +4,7 @@
 **/node_modules
 **/*.md
 static/svelte/*
+
+**/public/
+
+**/layouts/partials/meta.html
