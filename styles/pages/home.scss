@@ -22,7 +22,7 @@
   }
 
   .btn {
-    @apply mx-auto my-0.5 w-fit rounded-md bg-slate-100 px-5 py-2 text-xl transition-colors duration-300 ease-out hover:bg-slate-300;
+    @apply mx-auto my-0.5 w-fit rounded-md bg-slate-100 px-5 py-2 text-base font-medium transition-colors  duration-300 ease-out hover:bg-slate-300 md:text-xl;
   }
 }
 

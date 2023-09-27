@@ -20,6 +20,7 @@
 
 html {
   @apply mx-auto w-screen overflow-x-hidden;
+  font-family: "Poppins", sans-serif;
 
   &::-webkit-scrollbar {
     @apply w-1;
