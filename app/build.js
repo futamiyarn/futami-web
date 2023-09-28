@@ -126,49 +126,6 @@ minifyXml.success({ text: chalk.bgBlue("XML minified") });
 const cssRegex = /var\s+(\w+)\s*=\s*`([^`]*[{}\-:;][^`=]*)`/;
 const faJsFile = await glob(`${publicPath}/**/f*-a*.js`).then((j) => j[0]);
 
-// const compressFa = createSpinner(
-//   "Trying crompresing font awesome file...",
-// ).start();
-
-// await readFile(faJsFile, "utf8").then(async (js) => {
-//   const strJsisCss = js.match(cssRegex);
-
-//   const liteCss = await new PurgeCSS().purge({
-//     content: ["public/**/*.html", "public/**/*.js"],
-//     css: [{ raw: await minify.css(strJsisCss[2]) }],
-//     fontFace: true,
-//     // rejectedCss: true,
-//     // variables: true,
-//     // keyframes: true,
-//   });
-
-//   await writeFile(
-//     faJsFile,
-//     js.replace(cssRegex, `var ${strJsisCss[1]}=\`${liteCss[0].css}\``),
-//   );
-// });
-
-// const publicCss = await glob("public/**/*.css");
-
-// await Promise.all(
-//   publicCss.map(
-//     async (css) =>
-//       await readFile(css, "utf8").then(async (c) => {
-//         const newCss = await new PurgeCSS().purge({
-//           content: ["public/**/*.html", "public/**/*.js"],
-//           css: [{ raw: c }],
-//           fontFace: true,
-//           // rejectedCss: true,
-//           // variables: true,
-//           // keyframes: true,
-//         });
-
-//         await writeFile(css, newCss[0].css);
-//       }),
-//   ),
-// );
-
-// compressFa.success({ text: chalk.bgBlue("Compress success") });
 console.log();
 console.log(chalk.bgBlue(" Website ready to deploy!! 🚀 "));
 console.log();

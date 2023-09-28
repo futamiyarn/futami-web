@@ -1,11 +1,22 @@
 .about {
-  @apply mt-4 flex flex-col items-center;
+  @apply prose mx-auto my-4 grid w-full px-5 [grid-template-columns:1fr_2fr_1fr] lg:prose-xl md:gap-x-5;
 
   h1 {
-    @apply my-4 inline-block border-b-4 text-3xl font-bold md:text-4xl;
+    @apply col-span-3 mx-auto my-3 inline-block h-auto border-b-4 font-bold;
+  }
+  h2 {
+    @apply col-span-3 mx-auto my-1.5 inline-block h-auto border-b-2 font-bold;
+  }
+
+  img {
+    @apply my-[2em] aspect-square w-72 self-center justify-self-center rounded-full md:w-52;
   }
 
   p {
-    @apply prose lg:prose-xl;
+    @apply self-center text-justify;
+  }
+
+  a {
+    @apply transition-colors duration-300 ease-out hover:text-slate-700;
   }
 }

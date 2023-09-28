@@ -45,6 +45,7 @@ resources/
 
 # WSL
 *:Zone.Identifier
+*Zone.Identifier
 
 ### Linux ###
 *~
