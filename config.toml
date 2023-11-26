@@ -3,26 +3,26 @@ languageCode = 'id-id'
 title = 'Futami Yarn'
 description = 'Bikin Otak Anda Sedikit Lebih Pintar'
 enableRobotsTXT = true
-
+paginate = 6
 
 [outputs]
-home = ["HTML", "RSS", "Algolia"]
+  home = ["HTML", "RSS", "Algolia"]
 
 [outputFormats.Algolia]
-baseName = "algolia"
-isPlainText = true
-mediaType = "application/json"
-notAlternative = true
+  baseName = "algolia"
+  isPlainText = true
+  mediaType = "application/json"
+  notAlternative = true
 
-# [params]
-# mainSections = ["posts"]
+[params]
+  mainSections = ["tutorial"]
 
 [params.algolia]
-vars = ["title", "description"]
-# params = ["tags"]
+  vars = ["title", "description"]
+  params = ["tags"]
 
 [markup.goldmark.renderer]
-unsafe= true
+  unsafe= true
 
 # [markup]
 #   [markup.highlight]

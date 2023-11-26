@@ -25,7 +25,6 @@
       src="/svelte/{{ .Site.Data.svelte.js }}"
       defer
     ></script>
-
   </head>
   <body>
     <!-- <global-data 
@@ -37,7 +36,7 @@
     prev="{{with .NextInSection}}{{.Permalink}}{{end}}">
   </global-data> -->
 
-    {{ partial "navbar.html" }}
+    {{ partial "navbar.html" . }}
     <main class="min-h-[81.5vh] pt-14">
       {{ block "main" . }}
       <!-- Main -->

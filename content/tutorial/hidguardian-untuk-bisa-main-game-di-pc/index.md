@@ -3,6 +3,8 @@ title: "HidGuardian Untuk Bisa Main Di PC"
 date: 2023-09-02T20:57:16+07:00
 author: FutamiYarn
 draft: false
+tutortags: ['gamepad', 'xbox']
+description: "Test"
 ---
 
 Jadi kali ini kita akan bahas cara bisa mengunakan HidHide untuk menghilangkan controller utama

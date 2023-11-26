@@ -1,9 +1,21 @@
+<!-- Check current URL -->
+
 <nav class="navbar">
+  {{ $parts := split .RelPermalink "/" }} {{ $first := index $parts 1 }}
+
   <div class="navbar-container">
     <logo-ani class="navbar-logo"></logo-ani>
     <div class="navbar-menu">
-      <a href="#" class="navbar-item active">Tutorial</a>
-      <a href="#" class="navbar-item">Courses</a>
+      <a
+        href="/tutorial"
+        class="navbar-item{{ if eq $first `tutorial` }} active{{ end }}"
+        >Tutorial</a
+      >
+      <a
+        href="#"
+        class="navbar-item {{ if eq $first `courses` }} active{{ end }}"
+        >Courses</a
+      >
       <a href="#" class="navbar-item">More</a>
       <a href="#" class="navbar-search" aria-label="can you serch anything?"
         >{{ partial "fa-icons/magnifying-glass.svg" . }}
